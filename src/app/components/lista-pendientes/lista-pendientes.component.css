@@ -1,0 +1,232 @@
+.card-lista-pendientes {
+    width: 33.3vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.input-width {
+    width: 25vw;
+}
+
+.float-title {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 14px;
+    background: #e65100;
+    color: white;
+}
+
+.lista-pendientes-body {
+    margin-top: 49px;
+    margin-left: 14px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 89.7vh;
+}
+
+.pendiente {
+    margin-left: 1px;
+    width: 30.5vw;
+    height: 103px;
+}
+
+.title-width {
+    width: 33.3vw;
+}
+
+.titulo {
+    margin-top: 9px;
+    text-align: center;
+    width: 100%;
+}
+
+.boton {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    margin: 5px;
+    padding: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 11px;
+    color: white;
+    cursor: pointer;
+}
+
+.boton:hover {
+    opacity: 0.50;
+    -moz-opacity: .50;
+    filter: alpha (opacity=50);
+}
+
+.agregar-pendiente {
+    position: fixed;
+    bottom: 0;
+    width: 33.3vw;
+    background: #009688;
+    height: 43px;
+}
+
+.agregar-pendiente input {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 0 4px 0 4px;
+    width: 90%;
+    margin-left: 7px;
+}
+
+.dropdown-item span {
+    position: relative;
+    top: -5px;
+    margin-left: 9px;
+}
+
+.agregar-boton {
+    position: absolute;
+    top: 3.4px;
+    right: 43px;
+}
+
+.boton-agregar {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    margin: 5px;
+    padding: 7px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 11px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1430px) {
+    .agregar-pendiente input {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 0 4px 0 4px;
+        width: 85%;
+        margin-left: 7px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-lista-pendientes {
+        width: 65vw;
+        height: 100vh;
+        position: absolute;
+    }
+    .input-width {
+        width: 60vw;
+    }
+    .pendiente {
+        margin-left: 1px;
+        width: 60vw;
+        height: 103px;
+    }
+    .title-width {
+        width: 65vw;
+    }
+    .agregar-pendiente {
+        position: fixed;
+        bottom: 0;
+        width: 65vw;
+        background: #009688;
+        height: 43px;
+    }
+    .agregar-pendiente input {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 0 4px 0 4px;
+        width: 86%;
+        margin-left: 7px;
+    }
+    .fecha-creacion {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card-lista-pendientes {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    .input-width {
+        width: 100vw;
+    }
+    .pendiente {
+        margin-left: 1px;
+        width: 93vw;
+        height: 103px;
+    }
+    .title-width {
+        width: 100vw;
+    }
+    .agregar-pendiente {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        background: #009688;
+        height: 43px;
+    }
+    .agregar-pendiente input {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 0 4px 0 4px;
+        width: 86%;
+        margin-left: 7px;
+    }
+    .fecha-creacion {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .card-lista-pendientes {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    .input-width {
+        width: 100vw;
+    }
+    .pendiente {
+        margin-left: 1px;
+        width: 93vw;
+        height: 103px;
+    }
+    .title-width {
+        width: 100vw;
+    }
+    .agregar-pendiente {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        background: #009688;
+        height: 43px;
+    }
+    .agregar-pendiente input {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 0 4px 0 4px;
+        width: 84%;
+        margin-left: 7px;
+    }
+    .fecha-creacion {
+        margin-right: 5px;
+    }
+}

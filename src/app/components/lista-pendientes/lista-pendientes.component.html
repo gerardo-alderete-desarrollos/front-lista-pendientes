@@ -1,0 +1,42 @@
+<div class="card-lista-pendientes z-depth-5">
+    <div class="float-title justify-content-between row title-width z-depth-3">
+        <h5 class="card-title titulo">
+            Lista de pendientes
+            <span class="badge badge-pill badge-dark">{{pendientes}}</span>
+        </h5>
+
+    </div>
+
+    <div class="lista-pendientes-body">
+        <div class="pendiente row z-depth-2 mb-2 " *ngFor="let pendiente of listaPendientes">
+            <div class="col-12 row justify-content-between flex-nowrap pr-0 ml-0">
+                <h5 class="mt-4">{{pendiente.nombre | titlecase}}</h5>
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" (click)="editarPendiente(pendiente)">
+                            <i class="material-icons">edit</i>
+                            <span>Editar</span>
+                        </a>
+                        <a class="dropdown-item" (click)="eliminarPendiente(pendiente)">
+                            <i class="material-icons">delete</i>
+                            <span>Eliminar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <small class="offset-6 col-6 fecha-creacion text-info">creacion: {{pendiente.fechaCreacion | date: 'medium'}}</small>
+        </div>
+    </div>
+
+    <div class="agregar-pendiente z-depth-5">
+        <input type="text" class="z-depth-5" #tarea [value]="nombrePendiente ? nombrePendiente : ''">
+        <i class="material-icons boton z-depth-2" (click)="agregarPendiente(tarea.value)">send</i>
+        <i class="material-icons agregar-boton boton-agregar z-depth-1" (click)="limpiarInput()" *ngIf="pendiente">clear</i>
+    </div>
+</div>
+
+
+<app-modal-confirmar [tipo]="tipo" [nombre]="nombrePendiente" (okResponse)="ok($event)"></app-modal-confirmar>
